@@ -12,7 +12,9 @@ export function useStickers() {
     if (saved) {
       try {
         setStickers(JSON.parse(saved));
-      } catch (e) {}
+      } catch {
+        
+      }
     }
   }, []);
 
@@ -25,12 +27,13 @@ export function useStickers() {
       const nextSticker = STICKER_LIST[nextIndex];
 
       const newStickers = { ...prev };
+
       if (nextSticker === 'none') {
         delete newStickers[key];
       } else {
         newStickers[key] = nextSticker;
       }
-      
+
       localStorage.setItem('calendar_stickers', JSON.stringify(newStickers));
       return newStickers;
     });
