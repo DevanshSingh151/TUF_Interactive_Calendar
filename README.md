@@ -2,7 +2,8 @@
 
 A production-grade, interactive Wall Calendar React component built with Next.js 14, Framer Motion, and date-fns. 
 
-![Calendar Screenshot Placeholder](https://via.placeholder.com/1000x500?text=Interactive+Wall+Calendar)
+<img width="1893" height="928" alt="image" src="https://github.com/user-attachments/assets/a8d576c3-6bb5-42c2-93da-37869fdd9476" />
+
 
 ## Features
 
